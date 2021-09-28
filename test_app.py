@@ -37,6 +37,5 @@ def test_feedback_loop():
     }
     with TestClient(app) as client:
         response = client.post("/feedback_loop", json=payload)
-        # asserting the correct response is received
         assert response.status_code == 200
         
