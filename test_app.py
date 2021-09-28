@@ -28,11 +28,12 @@ def test_pred_virginica():
 # test to check if feedback loop is working
 def test_feedback_loop():
     # defining a sample payload for the testcase
-    payload = [{
-        "sepal_length": 3,
-        "sepal_width": 5,
-        "petal_length": 3.2,
-        "petal_width": 4.4,
+    payload = {
+        "sepal_length": 6.4,
+        "sepal_width": 2.7,
+        "petal_length": 5.3,
+        "petal_width": 1.9,
+
         "flower_class": "Iris Virginica"
     }]
     with TestClient(app) as client:
